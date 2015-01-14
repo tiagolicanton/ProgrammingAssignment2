@@ -18,10 +18,10 @@ makeCacheMatrix <- function(x = matrix()){
           getsolve = getsolve)
 }
 
-## cachasolve calculates the solve of the special vector created with makeCacheMatrix.
-## It first checks if the solve has been already calculated. It so, the cache is fetched
-## and returned without calculation. Otherwise, it calculates the solve of the matrix
-## and set the value of the solve via setsolve function
+## cachasolve calculates the inverse of the special vector created with makeCacheMatrix.
+## It first checks if the inverse has been already calculated. It so, the cache is fetched
+## and returned without calculation. Otherwise, it calculates the inverse of the matrix
+## and sets the value of the inverse via setsolve function
 
 cachesolve <- function(x, ...){
     m <- x$getsolve()
